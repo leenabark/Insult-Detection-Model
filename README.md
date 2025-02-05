@@ -1,13 +1,13 @@
 # 🛑 Insult Detection Model 🚀  
 
-![Insult Detection Banner](https://user-images.githubusercontent.com/your-banner-image)  
+
 
 ## 🔍 Overview  
 Toxicity in online spaces is a growing problem. This project tackles the challenge by **detecting insults in social media comments** using **cutting-edge NLP techniques**. The model identifies whether a comment contains **cyberbullying, hate speech, or offensive language**, making online platforms safer.  
 
 ✨ **Why This Project is Unique?**  
 ✅ **High Accuracy:** Uses **transformer-based models (BERT, RoBERTa)** for precise insult detection.  
-✅ **Advanced Text Processing:** Cleans slang, abbreviations, emojis, and even stretched words.  
+✅ **Advanced Text Processing:** Cleans slang, abbreviations, emojis, and stretched words.  
 ✅ **Real-World Application:** Can be **integrated into social media moderation systems**.  
 ✅ **User-Friendly Interface:** Provides an **interactive web app** for real-time insult detection.  
 
