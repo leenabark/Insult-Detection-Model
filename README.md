@@ -1,64 +1,63 @@
-# 🛑 Insult Detection Model 🚀  
+# Insult Detection Using NLP
 
+## Overview  
+Online toxicity is a significant and growing concern. This project addresses the issue by detecting insults in social media comments through advanced NLP techniques. The model identifies content containing cyberbullying, hate speech, or offensive language, with the goal of improving moderation and safety on digital platforms.
 
-
-## 🔍 Overview  
-Toxicity in online spaces is a growing problem. This project tackles the challenge by **detecting insults in social media comments** using **cutting-edge NLP techniques**. The model identifies whether a comment contains **cyberbullying, hate speech, or offensive language**, making online platforms safer.  
-
-✨ **Why This Project is Unique?**  
-✅ **High Accuracy:** Uses **transformer-based models (BERT, RoBERTa)** for precise insult detection.  
-✅ **Advanced Text Processing:** Cleans slang, abbreviations, emojis, and stretched words.  
-✅ **Real-World Application:** Can be **integrated into social media moderation systems**.  
-✅ **User-Friendly Interface:** Provides an **interactive web app** for real-time insult detection.  
+### Key Highlights  
+- **High Accuracy**: Utilizes transformer-based models such as BERT and RoBERTa for reliable insult detection.  
+- **Comprehensive Text Preprocessing**: Handles slang, abbreviations, emojis, and stretched words for cleaner input.  
+- **Real-World Relevance**: Designed to support integration into moderation pipelines for social platforms.  
+- **Interactive Interface**: A simple web application is available for real-time comment evaluation.
 
 ---
 
-## 📌 **Features**
-✅ **Multi-Step NLP Preprocessing**  
-✔️ Removes **emojis, URLs, mentions (@username)**  
-✔️ Filters **non-English text**  
-✔️ Expands **slang & abbreviations** (e.g., *u → you*, *brb → be right back*)  
-✔️ Fixes **stretched words** (e.g., *sooooo → so*)  
-✔️ Applies **lemmatization & stopword removal**  
+## Features
 
-✅ **State-of-the-Art Model**  
-✔️ Uses **BERT, RoBERTa, or SVM** for classification  
-✔️ Trained on a **large dataset of 47,000+ tweets**  
-✔️ Handles **imbalanced classes with weighted loss functions**  
+### Advanced NLP Preprocessing  
+- Removal of emojis, URLs, and user mentions  
+- Filtering of non-English text  
+- Expansion of common internet slang and abbreviations  
+- Normalization of stretched words  
+- Lemmatization and stopword removal  
 
-✅ **Interactive User Interface**  
-✔️ **Web-based UI (Streamlit)** where users can enter a comment and check if it's an insult  
-✔️ **Fast & Accurate** classification in real-time  
+### Model Architecture  
+- BERT, RoBERTa, and SVM classifiers  
+- Trained on a dataset of over 47,000 labeled tweets  
+- Uses class-weighted loss functions to address data imbalance  
 
----
-
-## 📊 **Dataset**
-We use the **Cyberbullying Classification Dataset** from Kaggle, which contains **47,692 labeled tweets** categorized into:  
-- 🔹 **Not Cyberbullying**  
-- 🔹 **Age-based Bullying**  
-- 🔹 **Ethnicity-based Bullying**  
-- 🔹 **Gender-based Bullying**  
-- 🔹 **Religion-based Bullying**  
-- 🔹 **Other Cyberbullying**  
-
-For better performance, we **convert this into a binary classification problem (insult vs. non-insult)**.
+### Web Interface  
+- Built with Streamlit for ease of use  
+- Enables users to input a comment and receive instant classification results
 
 ---
 
-## 🚀 **Tech Stack**
-| Component       | Technology |
-|----------------|------------|
-| **Programming** | Python 🐍 |
-| **Data Processing** | Pandas, NumPy |
-| **NLP** | SpaCy, LangDetect, Regex, Stopwords |
-| **Machine Learning** | Scikit-Learn, Transformers (BERT, RoBERTa) |
-| **Visualization** | Matplotlib, Seaborn, WordCloud |
-| **Deployment** | Streamlit (for UI), Hugging Face (optional) |
+## Dataset  
+The project uses the **Cyberbullying Classification Dataset** from Kaggle, which includes **47,692 labeled tweets** categorized into:  
+- Not Cyberbullying  
+- Age-based Bullying  
+- Ethnicity-based Bullying  
+- Gender-based Bullying  
+- Religion-based Bullying  
+- Other Cyberbullying  
+
+For this implementation, the problem has been simplified to binary classification: **insult vs. non-insult**.
 
 ---
 
-## ⚡ **How It Works**
-🔹 **Step 1**: Enter a comment in the input field.  
-🔹 **Step 2**: The model processes the text and predicts if it's an insult.  
-🔹 **Step 3**: The result is displayed instantly!  
+## Tech Stack  
 
+| Area             | Tools & Libraries                          |
+|------------------|---------------------------------------------|
+| Programming      | Python                                      |
+| Data Processing  | Pandas, NumPy                               |
+| NLP              | SpaCy, LangDetect, Regex, NLTK              |
+| Machine Learning | Scikit-learn, Hugging Face Transformers     |
+| Visualization    | Matplotlib, Seaborn, WordCloud              |
+| Deployment       | Streamlit                                   |
+
+---
+
+## How It Works  
+1. A user inputs a comment.  
+2. The system preprocesses the text and runs it through the trained model.  
+3. The interface displays whether the comment is classified as an insult or not.
